@@ -1,0 +1,44 @@
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+.leftSide h1 {
+    color: #393f48;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 5.6rem;
+    margin: 0;
+    text-align: left;
+}
+
+.leftSide h2 {
+    color: #008cc9;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: -22px 0 20px 0;
+    text-align: left;
+}
+
+.leftSide span {
+    color: #445c61;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.rightSide img {
+    margin-right: -100px;
+    opacity: 0; /* Initially hidden */
+    transform: translateX(50px); /* Initial position (offscreen) */
+    animation: fadeInSlideIn 1.5s forwards ease-in-out; /* Animation applied */
+}
+
+@keyframes fadeInSlideIn {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* Slide to original position */
+    }
+}
